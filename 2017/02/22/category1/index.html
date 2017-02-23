@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="开始,日志," />
 
 
 
@@ -87,12 +87,37 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Even's Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="首先，说下Javascript一直都想做点笔记，做为开发人员是该记录下；大家看了也别觉得简单，但是js中用的比较多的。break |continue | return 用法。
+
+Break 语句
+我们之前见到过break语句,它用于跳出 switch() 语句;break 语句也可用于跳出循环。跳出循环后，会继续执行该循环之后的代码（如果有的话）：
+
+
+
+实例12345var sNum = 0;f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="break | continue | return  用法">
+<meta property="og:url" content="http://yoursite.com/2017/02/22/category1/index.html">
 <meta property="og:site_name" content="Even's Blog">
+<meta property="og:description" content="首先，说下Javascript一直都想做点笔记，做为开发人员是该记录下；大家看了也别觉得简单，但是js中用的比较多的。break |continue | return 用法。
+
+Break 语句
+我们之前见到过break语句,它用于跳出 switch() 语句;break 语句也可用于跳出循环。跳出循环后，会继续执行该循环之后的代码（如果有的话）：
+
+
+
+实例12345var sNum = 0;f">
+<meta property="og:updated_time" content="2017-02-23T05:09:34.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Even's Blog">
+<meta name="twitter:title" content="break | continue | return  用法">
+<meta name="twitter:description" content="首先，说下Javascript一直都想做点笔记，做为开发人员是该记录下；大家看了也别觉得简单，但是js中用的比较多的。break |continue | return 用法。
+
+Break 语句
+我们之前见到过break语句,它用于跳出 switch() 语句;break 语句也可用于跳出循环。跳出循环后，会继续执行该循环之后的代码（如果有的话）：
+
+
+
+实例12345var sNum = 0;f">
 
 
 
@@ -120,13 +145,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/02/22/category1/"/>
 
 
 
 
 
-  <title> Even's Blog </title>
+  <title> break | continue | return  用法 | Even's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -151,9 +176,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -234,9 +257,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -269,10 +292,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/02/22/category1/" itemprop="url">
-                  break | continue | return  用法
-                </a>
+                break | continue | return  用法
               
             
           </h1>
@@ -345,9 +365,7 @@
       
 
       
-        
-          
-            <p>首先，说下Javascript一直都想做点笔记，做为开发人员是该记录下；大家看了也别觉得简单，但是js中用的比较多的。break |continue | return 用法。</p>
+        <p>首先，说下Javascript一直都想做点笔记，做为开发人员是该记录下；大家看了也别觉得简单，但是js中用的比较多的。break |continue | return 用法。</p>
 <ul>
 <li>Break 语句<blockquote>
 <p>我们之前见到过<em>break</em>语句,它用于跳出 switch() 语句;break 语句也可用于跳出循环。跳出循环后，会继续执行该循环之后的代码（如果有的话）：</p>
@@ -375,39 +393,52 @@
 <p>答案：点击按钮没有任何结果。<br>在函数体内加了return，条件成立了就直接跳出方法体，进而就没有执行alert（）方法，所以点击按钮是没有任何结果出现的。相当于没点击一样。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"button"</span> onclick=<span class="string">"click()"</span> value=<span class="string">"按 钮"</span>&gt;</div><div class="line">&lt;script&gt;</div><div class="line">    <span class="keyword">function</span> <span class="function"><span class="title">click</span></span>() &#123;</div><div class="line">        var sNum = 0;</div><div class="line">        <span class="keyword">for</span> (var i = 1; i &lt; 101; i++) &#123;</div><div class="line">            <span class="keyword">if</span> (i == 6) &#123;</div><div class="line">                i = a(i);</div><div class="line">            &#125;</div><div class="line">            sNum += i;</div><div class="line">        &#125;</div><div class="line">        alert(sNum);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">function</span> a(i) &#123;</div><div class="line">        i += 4;</div><div class="line">        <span class="built_in">return</span> i;</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
 <p>答案：5020<br>当i=6时，a（）里面就传6 function a（6）{}，i+=4 为10，然后return 10到被调用的地方，i=a（i） i就等于10，这样就是中间的6 7 8 9 就没有做累加。</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/开始/" rel="tag"># 开始</a>
+          
+            <a href="/tags/日志/" rel="tag"># 日志</a>
+          
+        </div>
+      
+
+      
+        
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -415,6 +446,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -434,8 +469,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -491,6 +535,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#实例"><span class="nav-number">1.</span> <span class="nav-text">实例</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#实例-1"><span class="nav-number">2.</span> <span class="nav-text">实例</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#实例-2"><span class="nav-number">3.</span> <span class="nav-text">实例</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
@@ -590,6 +650,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
